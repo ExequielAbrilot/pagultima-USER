@@ -1,0 +1,6 @@
+<h1>Editing Compromisso</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @compromisso %> |
+<%= link_to 'Back', :controller => "compromissos" ,action: "index" ,:searchbox=> @compromisso.fotografo.nombre_pila %>

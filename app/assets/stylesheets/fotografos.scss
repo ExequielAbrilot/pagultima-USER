@@ -1,0 +1,70 @@
+// Place all the styles related to the fotografos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*--my skill--*/
+
+.strip{
+  margin: 28px 0 0px 0;
+}
+ .text-center {
+  text-align: center;
+}
+
+.alaizq{
+	float:left;
+}
+.clearfix:before,
+.clearfix:after{
+display: table;
+  content: " ";
+}
+
+.col-md-1{
+position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-2{
+
+position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.my-skills{
+	background: #1abc9c;
+	padding: 60px 0;
+}
+.my-skills h3{
+margin:0;
+color:#ffffff;
+font-size:36px;
+font-weight:500;
+letter-spacing: 18px;
+}
+.skill-grids{
+margin-top:50px;
+}
+.skills-grid p{
+margin:20px 0 0 0;
+color:#ffffff;
+font-size:16px;
+font-weight:600;
+text-transform:uppercase;
+}
+.circle{
+color:#ffffff;
+font-size:36px;
+}
+span.circles-number {
+  font-size: 36px;
+}
+span.circles-text {
+  font-size: 36px;
+}
+.circles-text-wrp {
+  line-height: 142px !important;
+}
+/*--//my skill--*/

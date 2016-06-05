@@ -1,0 +1,87 @@
+
+<div class="my-skills text-center">
+	<div class="container">
+		<h3 >Profesional</h3>
+		<div class="strip text-center"><%= image_tag("icons/tuerca.png")%> </div>
+
+
+		<div class="skill-grids">
+					<div class="col-md-1 skills-grid alaizq">
+						<div class="circle" id="circles-1"></div>
+						<p id="pe">Photoshop</p>
+					</div>
+					<div class="col-md-2 skills-grid alaizq">
+						<div class="circle" id="circles-2"></div>
+						<p id="pe">Illustrator</p>
+					</div>
+					
+
+					<div class="clearfix"> </div>
+				 <%= javascript_include_tag 'circles', :type => 'text/javascript' %>
+				 <!--<script type="text/javascript" src="assets/javascripts/circles.js"></script>-->
+					         <script>
+								var colors = [
+										['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+									];
+								for (var i = 1; i <= 7; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 20 + (i * 20);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+							
+							</script>
+							
+		</div>
+	</div>	
+</div>
+
+
+
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+<%= image_tag(@fotografo.image.url, size: "80x160" )%>
+</br>
+
+<%= @fotografo.nombre_pila %>
+</br>
+<%= @fotografo.fecha_nacimiento %>
+</br>
+<%= select_tag "favorite_color", '<option value="red">Red</option><option value="green">Green</option><option value="blue">Blue</option>'.html_safe %> 
+
+</br>
+<%= link_to 'Fotografos', fotografos_path %>
+</br>
+<%= link_to 'Compromiso',:controller => "compromissos" ,action: "index" ,:searchbox=> @fotografo.nombre_pila %>
